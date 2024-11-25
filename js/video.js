@@ -42,11 +42,11 @@ document.querySelector("#skip").addEventListener("click",skipAhead)
 let muteButton = document.querySelector("#mute");
 function Mute(){
 	if(video.volume>0){
-		video.volume=0
+		video.muted=true
 		muteButton.innerHTML = "Unmute"
 	}
 	else{
-		video.volume = 1
+		video.muted = false
 		muteButton.innerHTML = "Mute"
 	};
 }
