@@ -8,8 +8,13 @@ window.addEventListener("load", function() {
 //play video
  document.querySelector("#play").addEventListener("click", function(){
 	video.play();
-	console.log(video.playbackRate)
+	console.log(video.playbackRate);
+	displayVol()
  });
+ function displayVol(){
+	vidVolume=video.volume*100
+	document.querySelector("#volume").innerHTML = ' ' + vidVolume + '%'
+ }
 //pause video
  document.querySelector("#pause").addEventListener("click", function(){
 	video.pause()
