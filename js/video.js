@@ -52,5 +52,16 @@ function Mute(){
 }
 muteButton.addEventListener("click", Mute);
 
-//slider
+//old school
+function applyOldSchool(){
+	video.classList.add("oldSchool");
+}
+document.querySelector("#vintage").addEventListener("click",
+	applyOldSchool);
+
+//original
+function applyOriginal(){
+	video.classList.remove("oldSchool");
+}
+document.querySelector("#orig").addEventListener("click",applyOriginal)
  
