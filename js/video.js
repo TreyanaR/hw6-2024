@@ -11,6 +11,7 @@ window.addEventListener("load", function() {
 	console.log(video.playbackRate);
 	displayVol()
  });
+//display volume
  function displayVol(){
 	vidVolume=video.volume*100
 	document.querySelector("#volume").innerHTML = ' ' + vidVolume + '%'
